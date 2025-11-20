@@ -14,6 +14,10 @@ export default function Sidebar() {
     { path: '/folha', label: 'Folha', icon: '💰' },
     { path: '/relatorios', label: 'Relatórios', icon: '📊' },
     { path: '/admin', label: 'Admin', icon: '⚙️' },
+    { path: '/metas', label: 'Metas', icon: '🎯' },
+    { path: '/aprovacoes', label: 'Aprovações', icon: '✅' },
+    { path: '/banco-horas', label: 'Banco de Horas', icon: '⏱️' },
+    { path: '/perfil', label: 'Perfil', icon: '👤' },
   ];
   
   return (

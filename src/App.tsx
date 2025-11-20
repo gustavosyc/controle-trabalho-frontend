@@ -8,6 +8,10 @@ import Ferias from './pages/Ferias';
 import Folha from './pages/Folha';
 import Admin from './pages/Admin';
 import Relatorios from './pages/Relatorios';
+import Metas from './pages/Metas';
+import Aprovacoes from './pages/Aprovacoes';
+import BancoHoras from './pages/BancoHoras';
+import Perfil from './pages/Perfil';
 
 function Private({ children }: { children: JSX.Element }) {
   const token = localStorage.getItem('token');
@@ -26,6 +30,10 @@ export default function App() {
       <Route path="/folha" element={<Private><Folha /></Private>} />
       <Route path="/admin" element={<Private><Admin /></Private>} />
       <Route path="/relatorios" element={<Private><Relatorios /></Private>} />
+      <Route path="/metas" element={<Private><Metas /></Private>} />
+      <Route path="/aprovacoes" element={<Private><Aprovacoes /></Private>} />
+      <Route path="/banco-horas" element={<Private><BancoHoras /></Private>} />
+      <Route path="/perfil" element={<Private><Perfil /></Private>} />
     </Routes>
   );
 }
