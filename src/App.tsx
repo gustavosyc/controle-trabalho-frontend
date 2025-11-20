@@ -7,6 +7,7 @@ import Producao from './pages/Producao';
 import Ferias from './pages/Ferias';
 import Folha from './pages/Folha';
 import Admin from './pages/Admin';
+import Relatorios from './pages/Relatorios';
 
 function Private({ children }: { children: JSX.Element }) {
   const token = localStorage.getItem('token');
@@ -24,6 +25,7 @@ export default function App() {
       <Route path="/ferias" element={<Private><Ferias /></Private>} />
       <Route path="/folha" element={<Private><Folha /></Private>} />
       <Route path="/admin" element={<Private><Admin /></Private>} />
+      <Route path="/relatorios" element={<Private><Relatorios /></Private>} />
     </Routes>
   );
 }

@@ -12,6 +12,7 @@ export default function Sidebar() {
     { path: '/producao', label: 'Produção', icon: '📈' },
     { path: '/ferias', label: 'Férias', icon: '🏖️' },
     { path: '/folha', label: 'Folha', icon: '💰' },
+    { path: '/relatorios', label: 'Relatórios', icon: '📊' },
     { path: '/admin', label: 'Admin', icon: '⚙️' },
   ];
   
